@@ -55,6 +55,7 @@ if [[ -d $OCBHAVE ]]; then
     cd $OCBHAVE/src
     tmux new-window -n 'OCBTree' 'guile -l btree-psi.scm; $SHELL'
     tmux new-window -n 'OCFaceTrack' 'python ../face_track/main.py; $SHELL'
+    tmux new-window -n 'RelEx' 'cd ../../relex/ && ./opencog-server.sh; $SHELL'
 fi
 cd $BASEDIR
 tmux new-window -n '$SHELL'
