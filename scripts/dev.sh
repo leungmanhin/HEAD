@@ -53,7 +53,7 @@ sleep 8
 export ROS_NAMESPACE=$NAME
 if [[ -d $OCBHAVE ]]; then
     cd $OCBHAVE/src
-    tmux new-window -n 'OCBTree' 'guile -l btree.scm; $SHELL'
+    tmux new-window -n 'OCBTree' 'guile -l btree-psi.scm; $SHELL'
     tmux new-window -n 'OCFaceTrack' 'python ../face_track/main.py; $SHELL'
 fi
 cd $BASEDIR
